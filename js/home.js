@@ -319,7 +319,7 @@ function rpsFrontEnd2(humanImageChoice,botImageChoice,finalMessage2){
 //change the color of all buttons
 var all_buttons = document.getElementsByTagName("button");
 //console.log(all_buttons);
-all_buttons = Array.from(HTMLAllCollection);
+all_buttons = Array.from(HTMLCollection);
 
 var copyAllButtons=[];
 
