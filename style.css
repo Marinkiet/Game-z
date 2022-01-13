@@ -1,0 +1,52 @@
+*{
+	margin: initial;
+}
+.container-1,.container-2, .container-3, .container-4, .container-5{
+    border: 5px solid blueviolet;
+    margin: 0% auto;
+    width: 75%;
+    text-align: center;
+    box-shadow: 6px 16px 50px rgb(113, 8, 250);
+}
+.flex-box-container-1, .flex-box-container-2, .flex-box-container-3, .flex-box-rps,.flex-box-rpsls, .flex-box-pick-color{
+   
+    display:  flex;
+    flex-direction: row;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 6px 16px 50px rgb(250, 8, 157);
+    
+}
+.flex-box-container-1 div{
+    display: flex;
+    padding: 10px;
+    border: 2px solid  black;
+    align-items: center;
+}
+
+.flex-box-container-2 img{
+    
+    box-shadow: 6px 16px 50px black;
+    padding: 10px;
+    margin: 20px;
+}
+
+.flex-box-rps  img:hover{
+    box-shadow: 6px 16px 50px rgb(125, 250, 8);
+}
+.flex-box-rps-div, .flex-box-rpsls-div{
+    justify-content: space-around;
+}
+.dark-mode{
+    background-color: black;
+    color: cornflowerblue;
+}
+
+.my-btns{
+    margin: 20px;
+}
+.flex-box-rpsls  img:hover{
+    box-shadow: 6px 16px 50px rgb(125, 250, 8);
+
+}

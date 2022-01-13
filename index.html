@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Games</title>
+</head>
+
+<body>
+    <script src="js/home.js" ></script>
+
+
+        <br><br>
+        <div>
+            <button class="btn btn-primary" onclick="darkmode()">Dark Mode</button>
+
+        </div>
+        <br>
+    
+            <div class="container-1">
+
+                <h2>Age Calculator</h2>
+                <div class="flex-box-container-1">
+                    <div>
+                        <button class="btn btn-primary" onclick="age()">Age</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" onclick="ageInDays()">Age in Days</button>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-danger" onclick="resetIt()">Refresh</button>
+                    </div>
+                </div>
+
+                <div class="flex-box-container-1">
+                    <div id="flex-box-result-age">
+                    </div>
+                    <div id="flex-box-result">
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <div class="container-2">
+
+                <h2> Cat Meme generator</h2>
+                <div class="flex-box-container-2" id="flex-meme-gen">
+                    <button class="btn btn-success  my-btns" id ="meme-generator" onclick="generateMeme()">Generate</button>
+
+                </div>
+            </div>
+
+            <br><br> 
+        <div class="container-3">
+            <h2>Rock Paper Scissors</h2>
+            <div class="flex-box-rps" id="flex-box-rps-div">
+                <img id="rock" src="Images/ROCK.jpg" height=150 width=150 onclick="rpsGame(this)"> 
+                <img id="paper" src="Images/PAPER.jpg" height=150 width=150 onclick="rpsGame(this)"> 
+                <img id="scissors" src="Images/SCISSORS.jpg" height=150 width=150 onclick="rpsGame(this)"> 
+            </div>
+            <div>
+                <h4> Rules:
+                    <ul>
+                        <li> Rock crushes Scissors.</li>
+                        <li> Scissors cuts Paper.</li>
+                        <li> Paper covers Rock.</li>
+                    </ul>
+                    
+                </h4>
+            </div>
+        </div>
+        <br><br> 
+        <div class="container-4">
+            <h2>Rock Paper Scissors Lizzerd Spock</h2>
+            <div class="flex-box-rpsls" id="flex-box-rpsls-div">
+                <img id="rock2" src="Images/ROCK.jpg" height=150 width=150 onclick="rpslzGame(this)"> 
+                <img id="paper2" src="Images/PAPER.jpg" height=150 width=150 onclick="rpslzGame(this)"> 
+                <img id="scissors2" src="Images/SCISSORS.jpg" height=150 width=150 onclick="rpslzGame(this)"> 
+                <img id="Lizzard2" src="Images/Lizzard.png" height=150 width=150 onclick="rpslzGame(this)"> 
+                <img id="spock2" src="Images/spock.jpg" height=150 width=150 onclick="rpslzGame(this)"> 
+            </div>
+            <div>
+                <h4> Rules:
+                    <ul>
+                        <li> Scissors cuts Paper.</li>
+                        <li> Paper covers Rock.</li>
+                        <li>Rock crushes Lizard.</li>
+                        <li> Lizard poisons Spock.</li>
+                        <li>Spock smashes Scissors.</li>
+
+                        <li>Scissors decapitates Lizard.</li>
+                        <li> Lizard eats Paper.</li>
+                        <li>Paper disproves Spock.</li>
+                        <li>Spock vaporizes Rock.</li>
+                        <li> (and as it always has) Rock crushes Scissors.</li>
+                    </ul>
+                    
+                </h4>
+            </div>
+        </div>
+
+        <br><br>
+            <div class="container-4">
+                <h2 id="change-my-color">Change the color of each button</h2>
+                <div class="flex-box-pick-color" >
+
+                    <form action="">
+                        <select name="backdrop" id="background" onchange="ButtonColorChange(this)">
+                        <option value="random">Random</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="reset">Reset</option>
+                        </select>
+                    </form>
+                
+                        <button class="btn btn-primary  my-btns">Blue Sky</button>
+                        <button class="btn btn-success  my-btns">Green Go</button>
+                        <button class="btn btn-warning  my-btns">Yellow Warned</button>
+                        <button class="btn btn-danger   my-btns">Red Danger!!! </button>
+                    
+                </div>
+
+                <div>
+                       <button class="btn btn-danger my-btns" onclick="resetIt2()">Refresh</button>
+                </div>
+                
+           
+            </div>
+            <br><br>
+            <div class="container-5">
+                <div><h2>Lets Reverse/Mirror a string </h2></div>
+                
+                <div class="flex-box-container-2">
+                    <button class="btn btn-warning my-btns" onclick="lstringRev()">Loop Reverse </button>
+                    <button class="btn btn-success my-btns" onclick="mstringRev()">Method Reverse </button>
+                    <button class="btn-primary my-btns" onclick="printRecusionstr()">Recursive Reverse </button>
+                </div>
+                <div class="flex-box-container-3">
+                    <br><br>
+                    <div id="LoopRevAns"></div>
+                    <div id="methodRevAns"></div>
+                    <div id="RecRevAns" ></div>
+                </div>
+             
+                
+        </div>
+        
+</body>
+</html>
+
