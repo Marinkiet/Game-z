@@ -4,5 +4,6 @@
 2) Rock Paper Scissors
 3) Rock Paper Scissors Lizzards Spock [ TTBT :) ]
 4) Button color changer
+5) String reverser (using loops,js methods and recursion)
 
 
